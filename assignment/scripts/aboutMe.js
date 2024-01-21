@@ -46,7 +46,7 @@ console.log(allowedPets);
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = '';
+let result;
 if(adventurous) {
   result = 'Adventures are great!';
 }
@@ -72,11 +72,11 @@ console.log(diceRoll);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = '';
-if(pets <= allowedPets) {
+let petStatus;
+if(pets < allowedPets) {
   petStatus = 'I can have more pets';
 }
-else if(pets === allowedPets) {
+else if(pets = allowedPets) {
   petStatus = 'I have enough pets';
 }
 else if(pets > allowedPets) {
@@ -90,6 +90,29 @@ console.log(petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets = '';
+if(pets > friendsPets) {
+  mostPets = pets;
+}
+else if(pets < friendsPets) {
+  mostPets = friendsPets;
+}
+else if(pets = friendsPets) {
+  mostPets = pets;
+}
+console.log(mostPets);
+//Below is how I tried to set this variable first.
+//let mostPets = '';
+//if(pets > friendsPets) {
+//  mostPets = 'I have more pets!';
+//}
+//else if(pets < friendsPets) {
+//  mostPets = 'My friewnds have more pets :(';
+//}
+//else if(pets = friendsPets) {
+//  mostPets = 'We have the same number of pets!';
+//}
+//console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -102,11 +125,10 @@ console.log(petStatus);
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
-
-
-
-
-
+result = adventurous ? 'Adventures are great!' : 'How about we stay at home?';
+console.log(result);
+//used this for reference on ternary operators, not sure I 100% understand but it appears to be working?
+//https://stackoverflow.com/questions/6259982/how-do-you-use-the-conditional-operator-in-javascript
 
 
 
