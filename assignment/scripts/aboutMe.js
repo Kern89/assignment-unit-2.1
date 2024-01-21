@@ -27,7 +27,8 @@ let adventurous = true
 console.log(adventurous);
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
-
+let food = 'pasta, tacos, and many more!'
+console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 
