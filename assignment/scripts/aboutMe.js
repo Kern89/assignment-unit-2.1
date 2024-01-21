@@ -31,7 +31,8 @@ let food = 'pasta, tacos, and many more!'
 console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-
+let pets = 3
+console.log(pets);
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 
 // 10 - Add two pets to your `pets` variable
